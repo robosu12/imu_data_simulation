@@ -12,6 +12,7 @@ This is a ros package that can generate imu data based on the imu error model an
 程序为一个ROS的工作空间，本人在贺一加老师提供的代码基础上，将生成IMU数据的代码封装成一个类，可以将生成的IMU数据实时进行积分，并且添加了IMU，PATH，ODOMETRY等topic的发布代码，可以在rviz中实时可视化IMU姿态，真实轨迹，积分轨迹，并且提供了已经配置好的rviz文件。
 
 程序运行流程：
+
 a.	cd  vio-data-simulation-ws
 
 b.	catkin_make
