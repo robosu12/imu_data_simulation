@@ -13,11 +13,17 @@ This is a ros package that can generate imu data based on the imu error model an
 
 程序运行流程：
 a.	cd  vio-data-simulation-ws
+
 b.	catkin_make
+
 c.	source  devel/setup.bash
+
 d.	roscore
+
 e.	rviz  -d  rviz/vio_simulation.rviz
+
 f.	rosrun  vio_data_simulation vio_data_simulation_node
+
 
 两次运行结果如下图所示，其中绿色线为真实轨迹，红色线为欧拉积分轨迹，白色线为中值积分轨迹：
 ![imu_integration_1](https://github.com/robosu12/imu_data_simulation/blob/master/picture/imu_integretion_in_euler_and_mid1.png)
