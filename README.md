@@ -6,6 +6,7 @@ This is a ros package that can generate imu data based on the imu error model an
 ![acc_allan](https://github.com/robosu12/imu_data_simulation/blob/master/picture/acc_allan.jpg)
 ![gyro_allan](https://github.com/robosu12/imu_data_simulation/blob/master/picture/gyro_allan.jpg)
 程序中计算得到的是离散时间的噪声，连续时间到离散时间需要除以根号下采样频率。
+
 总结：从标定结果可以看到，经过转换，加速度计和陀螺仪的高斯白噪声测量值和设定值基本接近，量级在百分之一左右；而加速度计和陀螺仪的bias噪声标定结果与设定结果相差较大，这是由于噪声的量级太小，在万分之一， 所以标定结果会有较大误差；所以这也说明在实际VIO应用中，需要将 IMU的bias加入到后端优化中进行实时估计。
 
 2. 进行IMU积分计算运动轨迹
